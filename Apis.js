@@ -67,34 +67,9 @@ app.post('/search', (req, res) => {
 
 
 
-app.get('/store-data', (req, res) => {
-    console.log(req.body.age)
-    // var fname = req.body.fname;
-    // var lname = req.body.lname;
-    // var gender = req.body.gender;
-    // var age = req.body.age;
-
-    // var fname = "dsds";
-    // var lname = "dsds";
-    // var gender = "dsds";
-    // var age = 10;
-    // var sql = `INSERT INTO user (id,fname, lname, gender, age) VALUES ("${fname}", "${lname}", "${gender}", "${age}", NOW())`;
-    // conn.query(sql, function (err, result) {
-    //     if (err) throw err;
-    //     console.log('record inserted');
-    //     res.json({ message: "Hello from server!" });
-    // });
-});
 
 app.get('/', (req, res) => {
-    // var fname = req.body.fname;
-    // var lname = req.body.lname;
-    // var gender = req.body.gender;
-    // var age = req.body.age;
-
-    var fname = "dsds";
-    var lname = "dsds";
-    var gender = "dsds";
+   
     var age = 10;
     var sql = `select * from user`;
     var data = conn.query(sql, function (err, result) {
